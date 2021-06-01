@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.urls import path
-from .views import ListProducView, ProducView, RegisterView, TestAPIView
+from .views import DetailProduct, ListProducView, ProducView, RegisterView, TestAPIView
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -33,6 +33,7 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='auth_register'),
     path('add-product/', ProducView.as_view(), name='add_product'),
     path('list-product/', ListProducView.as_view(), name='list_product'),
+    path('products/<int:pk>/', DetailProduct.as_view(), name='singleproduct'),
     url(r'^docs/$', include_docs_urls(title='My API title')),
     path('', schema_view.with_ui('swagger',
                                  cache_timeout=0), name='schema-swagger-ui'),

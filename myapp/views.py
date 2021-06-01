@@ -29,3 +29,8 @@ class ListProducView(generics.ListAPIView):
     queryset = ProductHistory.objects.all()
     permission_classes = (permissions.IsAuthenticated, )
     serializer_class = ProductSerializer
+
+class DetailProduct(generics.RetrieveUpdateAPIView):
+    permission_classes = (permissions.IsAuthenticated,)
+    queryset = ProductHistory.objects.all()
+    serializer_class = ProductSerializer
