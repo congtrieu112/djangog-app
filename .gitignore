@@ -45,3 +45,7 @@ ENV/
 
 # vscode
 .vscode/
+
+false/
+*.pyc
+myproject/__pycache__/urls.cpython-39.pyc
