@@ -6,7 +6,9 @@ from rest_framework.permissions import AllowAny
 # Create your views here.
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 from .serializers import ProductSerializer, RegisterSerializer
 from rest_framework import generics
 

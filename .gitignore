@@ -47,5 +47,12 @@ ENV/
 .vscode/
 
 false/
-*.pyc
-myproject/__pycache__/urls.cpython-39.pyc
+.pyc
+# myproject/__pycache__/urls.cpython-39.pyc
+# custom_user/__init__.py
+# myproject/__pycache__/settings.cpython-39.pyc
+# myapp/__pycache__/views.cpython-39.pyc
+# myapp/__pycache__/urls.cpython-39.pyc
+# myapp/__pycache__/admin.cpython-39.pyc
+# myproject/__pycache__/urls.cpython-39.pyc
+# myproject/__pycache__/settings.cpython-39.pyc

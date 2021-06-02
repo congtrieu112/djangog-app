@@ -34,7 +34,7 @@ urlpatterns = [
     path('add-product/', ProducView.as_view(), name='add_product'),
     path('list-product/', ListProducView.as_view(), name='list_product'),
     path('products/<int:pk>/', DetailProduct.as_view(), name='singleproduct'),
-    url(r'^docs/$', include_docs_urls(title='My API title')),
+    url(r'^docs/', include_docs_urls(title='My API title')),
     path('', schema_view.with_ui('swagger',
                                  cache_timeout=0), name='schema-swagger-ui'),
     path("redoc", schema_view.with_ui('redoc',

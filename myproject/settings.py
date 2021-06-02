@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'django.contrib.staticfiles',
     'corsheaders',
-    'drf_yasg'
+    'drf_yasg',
+    'django_use_email_as_username.apps.DjangoUseEmailAsUsernameConfig',
+    'custom_user.apps.CustomUserConfig'
 ]
 
 MIDDLEWARE = [
@@ -87,7 +89,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
-
+AUTH_USER_MODEL = 'custom_user.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
