@@ -1,1 +1,0 @@
-# djangog-app
